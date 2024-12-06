@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="KNAP KNIPPEN - De barbier van Beuningen voor de moderne man. Ervaar vakmanschap en stijl bij Danny's barbershop.">
+    <meta name="keywords" content="barbier, kapper, Beuningen, KNAP KNIPPEN, heren kapsalon, baardverzorging">
+    <link rel="icon" type="image/x-icon" href="img/Logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KNAP KNIPPEN - Dé Barbier van Beuningen</title>
+    <link rel="stylesheet" href="/Knap Knippen/Website v3/css/stylesv2.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div id="banner" class="banner">
+        <div class="banner-content">
+            <span id="bannerText">Beste klanten, tussen 30 december en 6 januari ben ik gesloten.</span>
+        </div>
+    </div>
+    <header>
+        <nav id="main-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#over-ons">Over Ons</a></li>
+                <li><a href="#gallerij">Galerij</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container">
+                <img src="img/logo high res.png" alt="KNAP KNIPPEN Logo" class="logo">
+                <h1>Welkom bij KNAP KNIPPEN</h1>
+                <p class="tagline">Dé barbier van Beuningen voor de moderne man</p>
+            </div>
+        </section>
+
+        <section id="over-ons">
+            <div class="container">
+                <h2>Over Ons</h2>
+                <img src="img/danny.jfif" alt="Danny, de barbier" class="barber-image">
+                <h3>Welkom bij Knap Knippen – De Barbier van Beuningen</h3>
+                <p>Sinds 2016 is Danny dé barbier waar Beuningen op rekent voor ambachtelijk en stijlvol haar- en baardonderhoud. Bij Knap Knippen beleef je niet alleen een knipbeurt, maar een ervaring waarbij vakmanschap centraal staat.</p>
+                <p>Of je nu komt voor een strakke scheerbeurt of een stijlvolle coupe – Danny's deskundigheid en passie zorgen ervoor dat je altijd tevreden en met een glimlach de deur uitgaat. Dit blijkt ook uit de meer dan 120 lovende reviews die Knap Knippen een uitmuntende waardering van 4,9 sterren opleveren.</p>
+                <p>Knap Knippen bevindt zich in het hart van Beuningen, waardoor je makkelijk binnen kunt stappen voor jouw afspraak. En een afspraak maken? Dat is een fluitje van een cent. Boek eenvoudig online of bel ons direct om je bezoek in te plannen.</p>
+                <p>Dus waar wacht je nog op? Ervaar zelf de kwaliteit en persoonlijke service die Knap Knippen zo speciaal maakt. Danny verwelkomt je graag!</p>       
+            </div>
+        </section>
+
+        <section id="gallerij">
+            <div class="container">
+                <h2>Galerij</h2>
+                <div class="gallery-container">
+                    <!-- Afbeeldingen worden hier dynamisch toegevoegd door JavaScript -->
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="reviews">
+            <div class="container">
+                <button id="prevReview" class="review-nav prev">&#10094;</button>
+                <button id="nextReview" class="review-nav next">&#10095;</button>
+            <h2>Recensies</h2>
+            <div class="reviews-slider">
+                <div id="reviewsContainer" class="reviews-container"></div>
+               
+            </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Klaar voor een frisse look? Neem direct contact op!</p>
+                <a href="tel:+31612345678" class="call-button">Bel nu voor een afspraak</a>
+            </div>
+        </section>
+        
+        <section id="afspraak">
+            <div class="container-afspraak">
+                <div class="vev-embed" data-vev-location-slug="barber-bos-barbershop-nl">
+                    <link rel="stylesheet" href="https://embed.vev.co/v1/styling.css?locationSlug=barber-bos-barbershop-nl"/>
+                    <script src="https://embed.vev.co/v1/main.js" defer></script>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com/knapknippen/?locale=nl_NL" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </div>
+        <div class="container">
+            <p>&copy; 2024 Knap Knippen. Alle rechten voorbehouden.</p>
+            <p>Adres:  <a target="_blank" href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x47c707736a447ca1:0xaf16251c9250abb7?sa=X&ved=1t:8290&ictx=111">Julianaplein 23 A, Beuningen</a></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalText"></p>
+        </div>
+    </div>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "BarberShop",
+          "name": "KNAP KNIPPEN",
+          "description": "Dé barbier van Beuningen voor de moderne man",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Julianaplein 23 A",
+            "addressLocality": "Beuningen",
+            "addressCountry": "NL"
+          },
+          "telephone": "+31612345678",
+          "url": "https://www.knapknippen.nl"
+        }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvppHfdftypN7DXVrxh1G-Jlyq-w7GHTA&libraries=places"></script>
+        <script src="main.js" defer></script>
+</body>
+</html>
